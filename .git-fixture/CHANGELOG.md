@@ -7,3 +7,4 @@
 - epoch 5: bootstrap
 - epoch 6: bootstrap
 - epoch 7: bootstrap
+- epoch 8: bootstrap
