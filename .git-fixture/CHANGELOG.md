@@ -18,3 +18,4 @@
 - epoch 16: bootstrap
 - epoch 17: bootstrap
 - epoch 18: bootstrap
+- epoch 19: bootstrap
