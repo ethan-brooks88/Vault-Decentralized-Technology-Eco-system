@@ -22,3 +22,4 @@
 - epoch 20: bootstrap
 - epoch 21: bootstrap
 - epoch 22: bootstrap
+- epoch 23: bootstrap
