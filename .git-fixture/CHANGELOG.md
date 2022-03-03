@@ -41,3 +41,4 @@
 - epoch 39: bootstrap
 - epoch 40: bootstrap
 - epoch 41: bootstrap
+- epoch 42: bootstrap
