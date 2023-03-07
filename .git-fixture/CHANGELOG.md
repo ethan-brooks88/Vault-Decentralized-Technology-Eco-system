@@ -95,3 +95,4 @@
 - epoch 93: core_features
 - epoch 94: core_features
 - epoch 95: core_features
+- epoch 96: core_features
