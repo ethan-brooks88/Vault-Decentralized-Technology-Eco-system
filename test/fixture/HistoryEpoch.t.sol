@@ -380,4 +380,5 @@ contract HistoryEpochTest is Test {
     function test_epoch_0376() public { uint256 x = 376; assertEq(x, 376); }
     function test_epoch_0377() public { uint256 x = 377; assertEq(x, 377); }
     function test_epoch_0378() public { uint256 x = 378; assertEq(x, 378); }
+    function test_epoch_0379() public { uint256 x = 379; assertEq(x, 379); }
 }
