@@ -1,5 +1,5 @@
 {
-  "name": "@mexoforge/simulator",
+  "name": "@entry-vault/simulator",
   "version": "0.4.0-internal",
   "type": "module",
   "main": "./dist/index.js",
@@ -14,7 +14,7 @@
     "run": "npm run build && node dist/cli.js run"
   },
   "dependencies": {
-    "@mexoforge/shared": "*"
+    "@entry-vault/shared": "*"
   },
   "devDependencies": {
     "typescript": "^5.8.3"
