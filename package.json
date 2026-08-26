@@ -1,0 +1,25 @@
+{
+  "name": "mexoforge-vault",
+  "version": "0.8.7",
+  "private": true,
+  "description": "Mexoforge Vault — isolated lending + yield router (internal QA)",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "server": "node scripts/server.mjs",
+    "stop": "node scripts/stop.mjs",
+    "build": "npm run build -w @mexoforge/shared && npm run build -w @mexoforge/simulator && npm run build -w @mexoforge/console && npm run build -w @mexoforge/api",
+    "verify": "node scripts/verify.mjs",
+    "test": "npm run test -w @mexoforge/simulator",
+    "test:contracts": "cd contracts && forge test",
+    "setup": "node scripts/setup.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}
