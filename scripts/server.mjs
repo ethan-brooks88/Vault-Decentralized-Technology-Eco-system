@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Mexoforge Vault — one command to build, simulate, and serve everything.
+ * Entry Vault — one command to build, simulate, and serve everything.
  * Usage: npm run server
  */
 import { spawn, spawnSync } from "node:child_process";
@@ -13,7 +13,7 @@ const npm = process.platform === "win32" ? "npm.cmd" : "npm";
 function banner() {
   console.log(`
   ╔══════════════════════════════════════════════════════════╗
-  ║           MEXOFORGE VAULT — Protocol Lab v0.4             ║
+  ║           ENTRY VAULT — Protocol Lab v0.4             ║
   ╠══════════════════════════════════════════════════════════╣
   ║  Contracts · Simulator · API · Console UI                ║
   ║  Stage: internal QA · Audit Aug 2026                     ║

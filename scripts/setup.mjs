@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const contracts = join(root, "contracts");
 
-console.log("\n  Mexoforge Vault — setup\n");
+console.log("\n  Entry Vault — setup\n");
 
 if (!existsSync(join(contracts, "lib", "forge-std"))) {
   console.log("  Installing forge-std...");

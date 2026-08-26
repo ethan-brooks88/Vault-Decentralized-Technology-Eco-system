@@ -11,7 +11,7 @@ function run(label, cmd, args) {
   if (r.status !== 0) process.exit(r.status ?? 1);
 }
 
-console.log("\n  Mexoforge Vault — verify\n");
+console.log("\n  Entry Vault — verify\n");
 run("build", "npm", ["run", "build"]);
 run("node tests", "npm", ["run", "test"]);
 console.log("\n✓ Node stack verified\n");
