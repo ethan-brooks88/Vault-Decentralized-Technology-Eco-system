@@ -59,7 +59,7 @@ function Boot() {
           review={<ReviewView />}
           learn={<LearnView />}
         />
-        <footer className="footer">Mexoforge · v0.4 · @mexoforge/console</footer>
+        <footer className="footer">Entry Vault Labs · v0.4 · @entry-vault/console</footer>
       </div>
     </>
   );

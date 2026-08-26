@@ -1,5 +1,5 @@
 const CARDS = [
-  { title: "Vault", body: "Deposit USDC/ETH → mxfVault shares. Entry point for LPs.", code: "contracts/src/core/MexoforgeVault.sol" },
+  { title: "Vault", body: "Deposit USDC/ETH → evShare shares. Entry point for LPs.", code: "contracts/src/core/EntryVault.sol" },
   { title: "Router", body: "Weighted split into isolated markets. Admin-configured caps.", code: "contracts/src/core/YieldRouter.sol" },
   { title: "Isolation", body: "WETH stress does not auto-drain USDC pool.", code: "docs/adr/001-isolated-markets.md" },
   { title: "Markets vs strategies", body: "Deposit playground → WETH/USDC pools. Sim also models external yield — see Markets tab.", code: "packages/shared/src/index.ts" },

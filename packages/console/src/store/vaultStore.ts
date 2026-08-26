@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { SimulationReport, VaultStatus } from "@mexoforge/shared";
+import type { SimulationReport, VaultStatus } from "@entry-vault/shared";
 import type { HealthResponse } from "../api/client";
 
 interface VaultStore {

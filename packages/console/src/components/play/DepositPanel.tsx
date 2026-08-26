@@ -1,5 +1,5 @@
 import * as Slider from "@radix-ui/react-slider";
-import { ROUTER_POOLS } from "@mexoforge/shared";
+import { ROUTER_POOLS } from "@entry-vault/shared";
 import { motion } from "framer-motion";
 import { ArrowRight, Loader2 } from "lucide-react";
 import { useState } from "react";
@@ -33,7 +33,7 @@ export function DepositPanel() {
         <div>
           <h2>Simulate a deposit</h2>
           <p>
-            <code>MexoforgeVault.deposit()</code> → <code>YieldRouter.routeDeposit()</code>
+            <code>EntryVault.deposit()</code> → <code>YieldRouter.routeDeposit()</code>
           </p>
         </div>
       </div>

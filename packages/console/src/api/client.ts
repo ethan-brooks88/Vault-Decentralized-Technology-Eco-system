@@ -4,7 +4,7 @@ import type {
   SimulationReport,
   StrategyAllocation,
   VaultStatus,
-} from "@mexoforge/shared";
+} from "@entry-vault/shared";
 
 const http = ky.create({ prefixUrl: location.origin });
 
