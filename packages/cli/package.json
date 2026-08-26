@@ -1,16 +1,16 @@
 {
-  "name": "@mexoforge/cli",
+  "name": "@entry-vault/cli",
   "version": "0.4.0-internal",
   "type": "module",
   "bin": {
-    "mexoforge": "./dist/bin/mexoforge.js"
+    "entryvault": "./dist/bin/entryvault.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@mexoforge/shared": "*",
-    "@mexoforge/simulator": "*"
+    "@entry-vault/shared": "*",
+    "@entry-vault/simulator": "*"
   },
   "devDependencies": {
     "typescript": "^5.8.3"

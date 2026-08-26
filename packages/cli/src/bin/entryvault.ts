@@ -2,15 +2,15 @@
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { runSimulation, formatReport } from "@mexoforge/simulator";
-import { PROTOCOL } from "@mexoforge/shared";
+import { runSimulation, formatReport } from "@entry-vault/simulator";
+import { PROTOCOL } from "@entry-vault/shared";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..", "..");
 const [, , cmd, ...rest] = process.argv;
 
 function help() {
   console.log(`
-  mexoforge — Mexoforge Vault developer CLI (v${PROTOCOL.version})
+  entryvault — Entry Vault developer CLI (v${PROTOCOL.version})
 
   Commands:
     doctor          Check Node, env, and optional Foundry toolchain
@@ -19,9 +19,9 @@ function help() {
     dev             Print quick-start URLs after npm run dev
 
   Examples:
-    npx mexoforge sim run
-    npx mexoforge sim run --stress
-    npx mexoforge doctor
+    npx entryvault sim run
+    npx entryvault sim run --stress
+    npx entryvault doctor
 `);
 }
 
@@ -35,7 +35,7 @@ function status() {
 
   Active roadmap (website-aligned):
     • Isolated lending + yield router in internal QA
-    • Economic simulation v2 — run: mexoforge sim run
+    • Economic simulation v2 — run: entryvault sim run
     • August audit sprint booked · Q4 2026 launch target
 `);
 }
