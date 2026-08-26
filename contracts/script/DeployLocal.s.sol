@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {Script} from "forge-std/Script.sol";
-import {MexoforgeVault} from "../src/core/MexoforgeVault.sol";
+import {EntryVault} from "../src/core/EntryVault.sol";
 import {IsolatedMarket} from "../src/core/IsolatedMarket.sol";
 import {YieldRouter} from "../src/core/YieldRouter.sol";
 import {PauseGuardian} from "../src/governance/PauseGuardian.sol";
@@ -15,7 +15,7 @@ contract DeployLocal is Script {
         vm.startBroadcast();
 
         PauseGuardian guardian = new PauseGuardian(msg.sender);
-        MexoforgeVault vault = new MexoforgeVault(MOCK_USDC, address(0), address(guardian));
+        EntryVault vault = new EntryVault(MOCK_USDC, address(0), address(guardian));
         YieldRouter router = new YieldRouter(address(vault));
         vault.setRouter(address(router));
 

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import {IsolatedMarket} from "./IsolatedMarket.sol";
-import {MexoforgeVault} from "./MexoforgeVault.sol";
+import {EntryVault} from "./EntryVault.sol";
 
 /// @title YieldRouter — weighted allocator across isolated markets
 /// @notice v0.4 internal QA — production routing logic under audit prep
@@ -13,7 +13,7 @@ contract YieldRouter {
     event Rebalance(uint256 totalRouted, uint256 timestamp);
     event StrategyUpdated(bytes32 indexed id, address market, uint256 weightBps);
 
-    MexoforgeVault public immutable vault;
+    EntryVault public immutable vault;
     address public admin;
 
     struct Strategy {
@@ -26,7 +26,7 @@ contract YieldRouter {
     mapping(bytes32 => uint256) public strategyIndex;
 
     constructor(address vault_) {
-        vault = MexoforgeVault(vault_);
+        vault = EntryVault(vault_);
         admin = msg.sender;
     }
 
