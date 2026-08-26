@@ -1,4 +1,4 @@
-import { MARKETS_V2, ROUTER_POOLS } from "@mexoforge/shared";
+import { MARKETS_V2, ROUTER_POOLS } from "@entry-vault/shared";
 
 const fmt = (n: number) =>
   "$" + n.toLocaleString(undefined, { maximumFractionDigits: 0 });
@@ -31,8 +31,8 @@ export function simulateDeposit(amountUsd: number): DepositSimulation {
   });
 
   const steps = [
-    `You deposit ${fmt(amount)} into Mexoforge Vault.`,
-    `Vault mints ${fmt(amount)} mxfVault shares (1:1 at first deposit).`,
+    `You deposit ${fmt(amount)} into Entry Vault.`,
+    `Vault mints ${fmt(amount)} evShare shares (1:1 at first deposit).`,
     `YieldRouter.routeDeposit() splits capital by weight:`,
     ...routes.map(
       (r) => `  → ${fmt(r.amountUsd)} (${r.weightPct}%) into ${r.asset} IsolatedMarket`

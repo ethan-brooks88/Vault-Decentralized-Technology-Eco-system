@@ -4,8 +4,8 @@ import type {
   SimulationScenario,
   SimulationSnapshot,
   StrategyAllocation,
-} from "@mexoforge/shared";
-import { MARKETS_V2, SCENARIOS, STRATEGIES_V2 } from "@mexoforge/shared";
+} from "@entry-vault/shared";
+import { MARKETS_V2, SCENARIOS, STRATEGIES_V2 } from "@entry-vault/shared";
 
 const BASE_TVL = 18_400_000;
 
@@ -127,7 +127,7 @@ export function formatReport(report: SimulationReport): string {
   const s = report.summary;
   const lines = [
     "",
-    "  Mexoforge Vault — Economic Simulation v2",
+    "  Entry Vault — Economic Simulation v2",
     "  ─────────────────────────────────────────",
     `  Scenario     ${report.scenario.label}`,
     `  Duration     ${report.scenario.durationDays} days`,

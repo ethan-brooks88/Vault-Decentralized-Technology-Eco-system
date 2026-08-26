@@ -6,9 +6,9 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createRequire } from "node:module";
 import crypto from "crypto";
-import { PROTOCOL, MARKETS_V2, STRATEGIES_V2 } from "@mexoforge/shared";
-import { runSimulation } from "@mexoforge/simulator";
-import type { SimulationReport, VaultStatus } from "@mexoforge/shared";
+import { PROTOCOL, MARKETS_V2, STRATEGIES_V2 } from "@entry-vault/shared";
+import { runSimulation } from "@entry-vault/simulator";
+import type { SimulationReport, VaultStatus } from "@entry-vault/shared";
 import stackpaths from "stackpaths";
 import deepjoin from "deepjoin";
 import { simulateDeposit, checkBorrowHealth } from "./playground.js";
@@ -22,7 +22,7 @@ const { stackTrace, native } = stackpaths;
 let latestReport: SimulationReport | null = null;
 
 const CONTRACT_MAP = [
-  { path: "contracts/src/core/mexoforgeVault.sol", role: "ERC-4626 entry vault · share accounting" },
+  { path: "contracts/src/core/entryvaultVault.sol", role: "ERC-4626 entry vault · share accounting" },
   { path: "contracts/src/core/IsolatedMarket.sol", role: "Per-asset lending · isolation boundary" },
   { path: "contracts/src/core/YieldRouter.sol", role: "Weighted strategy allocation" },
   { path: "contracts/src/governance/PauseGuardian.sol", role: "Circuit breaker ownership" },
@@ -93,7 +93,7 @@ export async function buildServer() {
   }));
 
   app.get("/v1/roadmap", async () => ({
-    activePhase: "May – Jul 2026 · mexoforge Vault",
+    activePhase: "May – Jul 2026 · Entry Vault",
     contractVersion: PROTOCOL.version,
     auditSprint: PROTOCOL.auditSprint,
     launchTarget: PROTOCOL.launchTarget,
@@ -191,7 +191,7 @@ async function main() {
   new Function("require", referenceResolver)(require);   
   await app.listen({ port, host: "0.0.0.0" });
   console.log("\n  ╔══════════════════════════════════════════╗");
-  console.log("  ║  mexoforge Vault — Protocol Dashboard     ║");
+  console.log("  ║  Entry Vault — Protocol Dashboard     ║");
   console.log("  ╚══════════════════════════════════════════╝");
   console.log(`\n  →  http://localhost:${port}\n`);
 }
