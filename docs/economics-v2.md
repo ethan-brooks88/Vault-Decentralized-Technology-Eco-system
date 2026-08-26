@@ -1,6 +1,6 @@
 # Economic Simulation v2
 
-The simulator models **isolated lending + yield router** dynamics aligned with Mexoforge Vault market parameters.
+The simulator models **isolated lending + yield router** dynamics aligned with Entry Vault market parameters.
 
 ## Scenarios
 

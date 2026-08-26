@@ -5,7 +5,7 @@
 
 ## Context
 
-Mexoforge Vault combines lending with a yield router. Pooled cross-asset lending concentrates tail risk — one bad asset can impair the entire pool.
+Entry Vault combines lending with a yield router. Pooled cross-asset lending concentrates tail risk — one bad asset can impair the entire pool.
 
 ## Decision
 

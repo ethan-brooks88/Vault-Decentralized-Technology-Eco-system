@@ -2,4 +2,4 @@
 
 README client-facing run instructions
 
-Mexoforge Vault protocol lab
+Entry Vault protocol lab

@@ -1,4 +1,4 @@
-# Mexoforge Vault
+# Entry Vault
 
 Isolated lending + yield router · v0.4 internal QA
 
@@ -27,8 +27,8 @@ Windows: double-click **`START.bat`**
 ## Project layout
 
 ```
-mexoforge-vault/
-├── contracts/          Foundry — MexoforgeVault, IsolatedMarket, YieldRouter
+entry-vault/
+├── contracts/          Foundry — EntryVault, IsolatedMarket, YieldRouter
 ├── packages/
 │   ├── shared/         Types, market config, scenarios
 │   ├── simulator/      Economic simulation v2
@@ -61,4 +61,4 @@ React dashboard with **Radix UI**, **Recharts**, **TanStack Query**, **Zustand**
 | `npm run test:contracts` | Foundry (after `npm run setup`) |
 | `npm run setup` | Install Foundry deps |
 
-**Mexoforge** · San Francisco · Remote worldwide
+**Entry Vault Labs** · San Francisco · Remote worldwide

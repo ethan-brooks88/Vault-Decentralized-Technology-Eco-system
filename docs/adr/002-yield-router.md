@@ -9,7 +9,7 @@ Vault deposits must flow into multiple yield sources (Aave, Curve, native Arbitr
 
 ## Decision
 
-`YieldRouter` sits between `MexoforgeVault` and `IsolatedMarket` instances:
+`YieldRouter` sits between `EntryVault` and `IsolatedMarket` instances:
 
 - Admin registers `(marketId, market, weightBps)`
 - `routeDeposit` slices deposits by weight
@@ -32,9 +32,9 @@ Vault stays ERC-4626-style entry; router owns allocation logic.
 
 ## Alignment with simulation v2
 
-Router weights in `@mexoforge/shared` (`STRATEGIES_V2`) mirror on-chain intent — sim and contracts share the same economic story.
+Router weights in `@entry-vault/shared` (`STRATEGIES_V2`) mirror on-chain intent — sim and contracts share the same economic story.
 
 ## Verification
 
-- `contracts/test/MexoforgeVault.t.sol` — router weight totals
+- `contracts/test/EntryVault.t.sol` — router weight totals
 - Console `/v1/markets` — live config JSON

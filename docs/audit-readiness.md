@@ -4,7 +4,7 @@
 
 | Component | Priority | Notes |
 |-----------|----------|-------|
-| `MexoforgeVault` | P0 | Share mint/burn, pause path |
+| `EntryVault` | P0 | Share mint/burn, pause path |
 | `IsolatedMarket` | P0 | Borrow health, liquidation |
 | `YieldRouter` | P0 | Weight invariants, reentrancy |
 | `ChainlinkAdapter` | P1 | Staleness, negative price |
@@ -22,7 +22,7 @@ npm run test:contracts
 
 ## Remediation policy
 
-100% critical/high remediation before sign-off — matches Mexoforge studio policy on client audits.
+100% critical/high remediation before sign-off — matches Entry Vault Labs studio policy on client audits.
 
 ## Pre-audit artifacts
 

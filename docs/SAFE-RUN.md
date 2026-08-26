@@ -35,7 +35,7 @@ cat packages/api/src/server.ts
 
 ```bash
 git clone [repo]
-cd mexoforge-vault
+cd entry-vault
 cat package.json scripts/server.mjs
 npm install --ignore-scripts
 npm run sim:stress    # terminal only, no server
@@ -77,6 +77,6 @@ Run `npm ls --depth=0` after install to verify tree.
 
 ## Report concerns
 
-Security contact: **security@mexoforge.com** (replace with your real alias)
+Security contact: **security@entryvault.dev** (replace with your real alias)
 
 If something looks wrong, tell us — we want that feedback before audit.

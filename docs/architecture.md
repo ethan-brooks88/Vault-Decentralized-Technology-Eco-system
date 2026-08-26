@@ -1,10 +1,10 @@
-# Architecture — Mexoforge Vault v0.4
+# Architecture — Entry Vault v0.4
 
 ## System overview
 
-Mexoforge Vault is a **two-layer DeFi protocol**:
+Entry Vault is a **two-layer DeFi protocol**:
 
-1. **Entry layer** — `MexoforgeVault` (ERC-4626-style shares) accepts user deposits.
+1. **Entry layer** — `EntryVault` (ERC-4626-style shares) accepts user deposits.
 2. **Routing layer** — `YieldRouter` allocates capital to weighted strategies.
 3. **Risk layer** — `IsolatedMarket` pools enforce per-asset collateral factors with no cross-asset contagion.
 
@@ -37,7 +37,7 @@ Mexoforge Vault is a **two-layer DeFi protocol**:
 
 | Package | Purpose |
 |---------|---------|
-| `@mexoforge/simulator` | Monte-carlo style utilization / liquidation modeling |
-| `@mexoforge/api` | REST surface for internal dashboards + integrators |
-| `@mexoforge/cli` | Developer ergonomics (`mexoforge sim run`) |
-| `@mexoforge/shared` | Single source of truth for market params |
+| `@entry-vault/simulator` | Monte-carlo style utilization / liquidation modeling |
+| `@entry-vault/api` | REST surface for internal dashboards + integrators |
+| `@entry-vault/cli` | Developer ergonomics (`entryvault sim run`) |
+| `@entry-vault/shared` | Single source of truth for market params |
